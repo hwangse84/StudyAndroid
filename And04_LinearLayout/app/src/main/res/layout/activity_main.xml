@@ -29,7 +29,7 @@ horizontal과 방향이 같은 속성 : 넑이 0dp
         android:layout_weight="1"/>
 
     <LinearLayout
-        android:background="#0056AD"
+        android:background="#869880"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
