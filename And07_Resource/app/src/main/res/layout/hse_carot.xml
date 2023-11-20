@@ -1,66 +1,285 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
 
-  <LinearLayout
-      xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-       android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
         >
-      <LinearLayout
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="나의 당근"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_profile"
+            />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="농성동 #3526967"
+            android:layout_marginTop="15dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="중고거래는 이제 당근케이로 해보세요!"
+            android:layout_marginTop="15dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:background="#E2E8A8"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.5"
-        android:orientation="horizontal"
-          >
-          <RelativeLayout
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content">
-             <TextView
-             android:padding="30dp"
-              android:layout_width="wrap_content"
-              android:layout_height="match_parent"
-              android:text="나의 당근"
-              android:layout_alignParentLeft="true"
-              />
-             <ImageView
-              android:layout_width="wrap_content"
-              android:layout_height="match_parent"
-              android:layout_alignParentRight="true"
-              android:src=""/>
-          </RelativeLayout>
-      </LinearLayout>
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="사장님 메뉴"
+                />
+            <ImageView
+                android:id="@+id/t2"
+                android:layout_below="@id/t1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+
+            <TextView
+                android:id="@+id/t2_1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/t1"
+                android:layout_marginStart="70dp"
+                android:text="프로필 관리"
+
+                />
+
+            <ImageView
+                android:id="@+id/t4"
+                android:layout_below="@id/t2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+
+            <TextView
+                android:id="@+id/t4_1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/t2_1"
+                android:layout_marginStart="70dp"
+                android:text="광고"
+                />
+        </RelativeLayout>
 
 
+    </LinearLayout>
 
 
-
-     <LinearLayout
-       android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"/>
-     <LinearLayout
-
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-       android:layout_weight="1"/>
+        android:layout_weight="3"
+        >
 
-     <LinearLayout
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="나의 활동"
+            />
+        <ImageView
+            android:id="@+id/t6"
+            android:layout_below="@id/t5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
 
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2" />
 
-     <LinearLayout
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/t5"
+            android:layout_marginStart="70dp"
+            android:text="내 동네 일정"
 
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2.5" />
 
-     <LinearLayout
+            />
 
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5"/>
+        <ImageView
+            android:id="@+id/t8"
+            android:layout_below="@id/t1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+        <TextView
+            android:id="@+id/t9"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/t7"
+            android:layout_marginStart="70dp"
+            android:text="동네인증하기"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/t10"
+            android:layout_below="@id/t1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+        <TextView
+            android:id="@+id/t11"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/t9"
+            android:layout_marginStart="70dp"
+            android:text="키워드알림"
+
+
+            />
+        <ImageView
+            android:id="@+id/t12"
+            android:layout_below="@id/t1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+        <TextView
+            android:id="@+id/t13"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/t11"
+            android:layout_marginStart="70dp"
+            android:text="둘러보기"
+
+
+            />
+        <ImageView
+            android:id="@+id/t14"
+            android:layout_below="@id/t1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+        <TextView
+            android:id="@+id/t15"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/t13"
+            android:layout_marginStart="70dp"
+            android:text="ㄹㅇㄻㄴㅇㄻ"
+
+
+            />
+    </LinearLayout>
+
+
+
+
 
 
 </LinearLayout>
@@ -73,19 +292,3 @@
 
 
 
-<!--
-<RelativeLayout
-android:layout_width="match_parent"
-android:layout_height="wrap_content">
-<TextView
-
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:text="나의 당근"
-    android:layout_alignParentLeft="true"
-    />
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:layout_alignParentRight="true"
-    android:src=""/>-->
