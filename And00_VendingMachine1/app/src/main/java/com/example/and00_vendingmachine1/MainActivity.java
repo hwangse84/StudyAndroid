@@ -1,4 +1,4 @@
-package com.example.and00_vendingmachine;
+package com.example.and00_vendingmachine1;
 
 import androidx.appcompat.app.AppCompatActivity;
 

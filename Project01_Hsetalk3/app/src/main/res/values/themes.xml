@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Project01_Hsetalk" parent="Theme.MaterialComponents.Light">
+
+
+        <!-- 액션바의 색상을 바꿈 -->
+        <item name="colorPrimary">@color/main_color</item>
+
+           <!--시계나 알림이 있는 영역 : status_bar : 흰색으로 바꿔보기
+              statusBarColor:색상변경
+               windowLightStatusBar:아이콘(알림) 색상변경
+                                                            -->
+        <item name="android:statusBarColor">@color/main_color</item>
+        <!--statusbar 안보임.. 아래처럼하면 보임-->
+        <item name="android:windowLightStatusBar">true</item>
+        <!--전체글꼴적용-->
+        <item name="fontFamily">@font/main_font</item>
+
+    </style>
+
+    <style name="Theme.Project01_Hsetalk" parent="Base.Theme.Project01_Hsetalk" />
+</resources>
