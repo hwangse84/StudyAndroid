@@ -18,6 +18,7 @@ LayoutInflater inflater;
 
 
     public ExamAdapter(LayoutInflater inflater) {
+
         this.inflater = inflater;
     }
 
