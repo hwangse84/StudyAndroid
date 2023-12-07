@@ -1,5 +1,7 @@
 package com.example.project01_hsetalk.friend;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -13,6 +15,13 @@ import java.util.ArrayList;
 public class FriendRecvAdapter extends RecyclerView.Adapter<FriendRecvAdapter.ViewHolder>{
     LayoutInflater inflater;//parent를 이용해서 초기화하는 방법은 나중에...
     ArrayList<FriendDTO> list;
+    Context context;
+
+    public FriendRecvAdapter(LayoutInflater inflater, ArrayList<FriendDTO> list, Context context) {
+        this.inflater = inflater;
+        this.list = list;
+        this.context = context;
+    }
 
     public FriendRecvAdapter(LayoutInflater inflater, ArrayList<FriendDTO> list) {
         this.inflater = inflater;
@@ -31,6 +40,12 @@ public class FriendRecvAdapter extends RecyclerView.Adapter<FriendRecvAdapter.Vi
             h.binding.imgvProfile.setImageResource(list.get(i).getProfileImg());
             h.binding.tvName.setText(list.get(i).getName());
             h.binding.tvMsg.setText(list.get(i).getMsg());
+
+            h.binding.lnFriend.setOnClickListener(v->{
+                Intent intent=new Intent(context,FriendDetailActivity.class);
+                intent.putExtra("dto",list.get(i));
+                context.startActivity(intent);
+            });
         }
 
         @Override
