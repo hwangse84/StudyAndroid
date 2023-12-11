@@ -41,7 +41,7 @@ public class FriendRecvAdapter extends RecyclerView.Adapter<FriendRecvAdapter.Vi
             h.binding.tvName.setText(list.get(i).getName());
             h.binding.tvMsg.setText(list.get(i).getMsg());
 
-            h.binding.lnFriend.setOnClickListener(v->{
+            h.binding.lnFriend.setOnClickListener(v->{//친구 목록 누르면....
                 Intent intent=new Intent(context,FriendDetailActivity.class);
                 intent.putExtra("dto",list.get(i));
                 context.startActivity(intent);

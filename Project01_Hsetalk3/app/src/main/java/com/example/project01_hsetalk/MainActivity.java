@@ -1,17 +1,13 @@
 package com.example.project01_hsetalk;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
-import android.view.MenuItem;
 
-import com.example.project01_hsetalk.chat.ChatFragment;
 import com.example.project01_hsetalk.databinding.ActivityMainBinding;
 import com.example.project01_hsetalk.friend.FriendFragment;
-import com.google.android.material.navigation.NavigationBarView;
+import com.example.project01_hsetalk.opentalk.OpenTalkMainFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,28 +27,30 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });  아래와 같은 내용*/
-        changeFragment(new FriendFragment());
-        binding.bottomNav.setOnItemSelectedListener(item->{
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,new FriendFragment()).commit();
+        binding.bottoomNav.setOnItemSelectedListener(item->{
             if(item.getItemId()==R.id.tab1){
-                changeFragment(new FriendFragment());
-            }else if(item.getItemId()==R.id.tab2){
-                changeFragment(new ChatFragment());
-            }else if(item.getItemId()==R.id.tab3){
+                actionBar.setTitle("채팅");
 
+                actionBar.setTitle("친구");
+            }else if(item.getItemId()==R.id.tab2){
+
+            }else if(item.getItemId()==R.id.tab3){
+                changeFragment(new OpenTalkMainFragment());
+
+                actionBar.setTitle("오픈채팅");
             }else if(item.getItemId()==R.id.tab4){
+                actionBar.setTitle("쇼핑");
 
             }else if(item.getItemId()==R.id.tab5){
+                actionBar.setTitle("더보기");
 
             }
-            actionBar.setTitle(item.getTitle());
-
             return true;
-
         });
     }
-    public void changeFragment(Fragment fragment){
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
+
+    public void changeFragment(OpenTalkMainFragment fragment){
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
     }
-
-
 }
