@@ -1,4 +1,4 @@
-package com.example.project01_hsetalk.talk.opentalk;
+package com.example.project01_hsetalk.opentalk;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -6,16 +6,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.project01_hsetalk.opentalk.OpenSubDTOS;
-import com.example.project01_hsetalk.talk.databinding.ItemOpentalkChat2Binding;
-import com.example.project01_hsetalk.talk.databinding.ItemOpentalkChatVerticalBinding;
+import com.example.project01_hsetalk.databinding.ItemOpentalkChatVerticalBinding;
+import com.example.project01_hsetalk.opentalk.OpenSubDTOs;
+
 
 import java.util.ArrayList;
 
 public class OpenSubAdapter3 extends RecyclerView.Adapter<OpenSubAdapter3.ViewHolder> {
-    ArrayList<OpenSubDTOS.OpenSub3DTO> list ;
+    ArrayList<OpenSubDTOs.OpenSub3DTO> list ;
 
-    public OpenSubAdapter3(ArrayList<OpenSubDTOS.OpenSub3DTO> list) {
+    public OpenSubAdapter3(ArrayList<OpenSubDTOs.OpenSub3DTO> list) {
         this.list = list;
     }
 

@@ -12,33 +12,34 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imgv_Back"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/imgv_back"
             android:alpha="0.4"
             android:scaleType="centerCrop"
-            android:src="@drawable/friend_back_img1" />
+            android:src="@drawable/friend_back_img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     </FrameLayout>
 
     <RelativeLayout
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imgv_Close"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/imgv_close"
             android:layout_marginTop="10dp"
             android:layout_alignParentLeft="true"
-            android:src="@drawable/k_1"
-            android:layout_width="30dp"
-            android:layout_height="30dp"/>
+            android:src="@drawable/friend_back_img8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
 
 
         <ImageView
             android:id="@+id/imgv_top_ic1"
             android:layout_alignParentRight="true"
-            android:src="@drawable/k_9"
+            android:src="@drawable/k_ss"
             android:layout_width="wrap_content"
             android:layout_height="50dp"/>
 
@@ -47,7 +48,7 @@
             android:layout_above="@id/ln_name"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            app:cardCornerRadius="15dp"
+            app:cardCornerRadius="20dp"
             >
             <ImageView
                 android:id="@+id/imgv_profile"
@@ -83,10 +84,13 @@
 
         <View
             android:id="@+id/view_line"
-
-            style="@style/grav_view_line1dp"/>
+            android:alpha="0.5"
+            android:layout_above="@id/ln_btm"
+            style="@style/gray_view_line1dp"/>
 
         <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
             android:id="@+id/ln_btm"
             android:orientation="horizontal"
             android:layout_alignParentBottom="true"
@@ -102,12 +106,14 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/k_star"
+                    android:src="@drawable/k_img1"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <TextView
+                    android:layout_marginTop="10dp"
                     android:textStyle="bold"
-                    android:textSize="18dp"
+                    android:textSize="14dp"
                     android:textColor="#C6C6C6"
                     android:text="1:1채팅"
                     android:layout_width="wrap_content"
@@ -125,12 +131,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/k_99"
+                    android:src="@drawable/img_tab1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <TextView
+                    android:layout_marginTop="10dp"
                     android:textStyle="bold"
-                    android:textSize="18dp"
+                    android:textSize="14dp"
                     android:textColor="#C6C6C6"
                     android:text="통화하기"
                     android:layout_width="wrap_content"
@@ -148,12 +155,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/k_p"
+                    android:src="@drawable/k_9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <TextView
+                    android:layout_marginTop="10dp"
                     android:textStyle="bold"
-                    android:textSize="18dp"
+                    android:textSize="14dp"
                     android:textColor="#C6C6C6"
                     android:text="페이스톡"
                     android:layout_width="wrap_content"

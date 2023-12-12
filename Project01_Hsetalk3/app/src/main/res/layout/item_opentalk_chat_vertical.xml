@@ -23,7 +23,7 @@
             >
 
             <FrameLayout
-                android:background="@drawable/friend_back_img8"
+                android:background="@drawable/item_opentalk_gradient_black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 

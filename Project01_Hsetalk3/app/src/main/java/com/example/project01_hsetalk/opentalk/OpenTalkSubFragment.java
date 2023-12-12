@@ -9,8 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.project01_hsetalk.talk.R;
 import com.example.project01_hsetalk.databinding.FragmentOpenTalkSubBinding;
+import com.example.project01_hsetalk.opentalk.OpenSubAdapter1;
+import com.example.project01_hsetalk.opentalk.OpenSubAdapter2;
+import com.example.project01_hsetalk.opentalk.OpenSubAdapter3;
+import com.example.project01_hsetalk.opentalk.OpenSubDAO;
+
 
 public class OpenTalkSubFragment extends Fragment {
     FragmentOpenTalkSubBinding binding;
@@ -28,7 +32,7 @@ public class OpenTalkSubFragment extends Fragment {
         binding.recvOpensub3.setAdapter(new OpenSubAdapter2(dao.getOpenSub3List()));
         binding.recvOpensub3.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        binding.recvOpensub4.setAdapter(new com.example.project01_kymtalk.opentalk.OpenSubAdapter3(dao.getOpenSub4List()));
+        binding.recvOpensub4.setAdapter(new OpenSubAdapter3(dao.getOpenSub4List()));
         binding.recvOpensub4.setLayoutManager(new LinearLayoutManager(getContext() , LinearLayoutManager.HORIZONTAL , false));
 
 

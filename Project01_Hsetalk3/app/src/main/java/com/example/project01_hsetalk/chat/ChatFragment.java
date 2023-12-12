@@ -8,8 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.project01_hsetalk.R.drawable;
 import com.example.project01_hsetalk.databinding.FragmentChatBinding;
+
 
 public class ChatFragment extends Fragment {
     FragmentChatBinding binding;
