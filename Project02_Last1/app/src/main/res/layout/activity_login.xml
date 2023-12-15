@@ -73,7 +73,7 @@
         android:layout_height="60dp"
         android:backgroundTint="#DF7196"
         android:elevation="5dp"
-        android:text="Button"
+        android:text="로그인"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@android:color/white"
         app:icon="@drawable/ic_launcher_foreground"
@@ -87,19 +87,17 @@
         app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
         app:strokeWidth="2dp" />
 
-
-
-
-    <Button
+    <ImageView
+        android:id="@+id/imgv_kakao_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="카카오 로그인"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="네이버 로그인"/>
+        android:src="@drawable/kakao_login_btn"
+        android:layout_margin="10dp"/>
+
+    <com.navercorp.nid.oauth.view.NidOAuthLoginButton
+    android:id="@+id/buttonOAuthLoginImg"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp" />
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
